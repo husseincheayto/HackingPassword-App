@@ -1,0 +1,124 @@
+
+public class CrackPassword extends Main {
+	public static String trial;
+	
+	public static void Pass_for_1character(String password,String []name){
+		for (String i:name){
+			 trial=new StringBuilder().append(i).toString();
+			 
+			 if(password.equals(trial)){
+					System.out.println("Password hacked... Your password is... "+trial);
+					break;
+				}
+			}
+	}
+
+	public void Pass_for_2character(String password, String[] name) {
+		for (String i:name){
+			for (String j:name){
+			 trial=new StringBuilder().append(i).append(j).toString();
+			if(password.equals(trial)){
+				System.out.println("Password hacked... Your password is... "+trial);
+				break;
+			}
+		}
+		}
+	}
+
+	public void Pass_for_3character(String password, String[] name) {
+		for (String i:name){
+			for (String j:name){
+				for (String k:name){
+			 trial=new StringBuilder().append(i).append(j).append(k).toString();
+			if(password.equals(trial)){
+				System.out.println("Password hacked... Your password is... "+trial);
+				break;
+			}
+				}
+		}
+		}
+		
+	}
+
+	public void Pass_for_4character(String password, String[] name) {
+		for (String i:name){
+			
+			for (String j:name){
+				
+				for (String k:name){
+					
+					for (String l:name){
+						
+			 trial=new StringBuilder().append(i).append(j).append(k).append(l).toString();
+			 
+			if(password.equals(trial)){
+				System.out.println("Password hacked... Your password is... "+trial);
+				break;
+			
+									  }
+													}
+												}
+											}
+										}
+		
+	}
+
+	public void Pass_for_5character(String password, String[] name) {
+		
+		for (String i:name){
+			
+			for (String j:name){
+				
+				for (String k:name){
+					
+					for (String l:name){
+						
+						for (String m:name){
+						
+			 trial=new StringBuilder().append(i).append(j).append(k).append(l).append(m).toString();
+			 
+			if(password.equals(trial)){
+				System.out.println("Password hacked... Your password is... "+trial);
+				break;
+									  }				
+														}
+			
+													}
+												}
+											}
+										}		
+	}
+
+	public void Pass_for_6character(String password, String[] name) {
+		
+		for (String i:name){
+			
+			for (String j:name){
+				
+				for (String k:name){
+					
+					for (String l:name){
+						
+						for (String m:name){
+							
+							for (String n:name){
+						
+			 trial=new StringBuilder().append(i).append(j).append(k).append(l).append(m).append(n).toString();
+			 
+			if(password.equals(trial)){
+				System.out.println("Password hacked... Your password is... "+trial);
+				break;
+									  }				
+															
+														}
+			
+													}
+												}
+											}
+										}
+
+		
+		
+	}
+}
+}
