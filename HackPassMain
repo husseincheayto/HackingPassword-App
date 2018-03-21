@@ -1,0 +1,73 @@
+import java.util.Objects;
+import java.util.Scanner;
+
+
+public class Main {
+
+
+	
+	public static void main(String[] args) {
+
+	String[] name={"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","`","~","!","@","#","$","%","^","&","*","(",")","_","+","-","=","}",";",":","[","]",",","'",".","/","<",">","?","Q","W","E","R","T","Y","U","I","O","P","L","K","J","H","G","F","D","S","A","Z","X","C","V","B","N","M"};
+	
+	
+	Scanner input=new Scanner (System.in);
+	String password=input.nextLine();
+
+	CrackPassword pass=new CrackPassword();
+	if (password.length()==1)
+	{	pass.Pass_for_1character(password, name);
+	}
+	if (password.length()==2){
+	pass.Pass_for_2character(password,name);
+	}
+	
+	if (password.length()==3)
+	{
+	pass.Pass_for_3character(password,name);
+	}
+	
+	if (password.length()==4)
+	pass.Pass_for_4character(password,name);
+	
+	
+	
+	if (password.length()==5)
+	pass.Pass_for_5character(password,name);
+	
+	if(password.length()==6)
+	pass.Pass_for_6character(password,name);
+	
+	/*
+	pass.Pass_for_7character(password,name);
+	pass.Pass_for_8character(password,name);
+	pass.Pass_for_9character(password,name);
+	pass.Pass_for_10character(password,name);
+	pass.Pass_for_11character(password,name);
+	pass.Pass_for_12character(password,name);
+	pass.Pass_for_13character(password,name);
+	pass.Pass_for_14character(password,name);
+	pass.Pass_for_15character(password,name);
+	pass.Pass_for_16character(password,name);
+	pass.Pass_for_17character(password,name);
+	pass.Pass_for_18character(password,name);
+	pass.Pass_for_19character(password,name);
+	pass.Pass_for_20character(password,name);
+	pass.Pass_for_21character(password,name);
+	pass.Pass_for_22character(password,name);
+	pass.Pass_for_23character(password,name);
+	pass.Pass_for_24character(password,name);
+	pass.Pass_for_25character(password,name);
+	pass.Pass_for_26character(password,name);
+	pass.Pass_for_27character(password,name);
+	pass.Pass_for_28character(password,name);
+	pass.Pass_for_29character(password,name);
+	pass.Pass_for_30character(password,name);
+	pass.Pass_for_31character(password,name);
+	pass.Pass_for_32character(password,name);
+	pass.Pass_for_33character(password,name);
+	pass.Pass_for_34character(password,name);
+	pass.Pass_for_35character(password,name);
+	*/
+	}
+	}
